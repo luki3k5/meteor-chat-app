@@ -1,0 +1,69 @@
+<head>
+<title>chatty</title>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Chatty</a>
+    <div class="login">
+      {{loginButtons}}
+    </div>
+  </div>
+</div>
+
+<div class="">
+  {{#if currentUser}}
+    {{> chatty}}
+  {{else}}
+    {{> welcome}}
+  {{/if}}
+</div>
+</body>
+
+<template name="welcome">
+  <div class="hero-unit">
+  <h1>Welcome</h1>
+  <p>Chatty is very lightweight and simple chat client written in Meteor.js</p>
+</div>
+</template>
+
+<template name="chatty">
+<div class="channel"> 
+  <div class="container-fluid" id="messages">
+    <div class="messages">
+      {{#each messages}}
+        {{> message}}
+      {{/each}} 
+    </div>
+  </div>
+</div>
+<form class="message-form form well" id="new_message">
+  <input type="text" class="message_text input-block-level" placeholder="type message..." name="text" id="new_message_text">
+  <input type="submit" class="btn btn-info" value="Send">
+</form>
+</template>
+
+<template name="message">
+<div class="media message">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="http://placehold.it/64x64">
+  </a>
+  <div class="media-body">
+    <div class="user">{{username}}</div>
+    {{text}} 
+  </div>
+</div>
+</template>
+
+<template name="message2">
+<span class="message">
+  <div class="message well">
+    <span class="username">{{username}}</span>
+    <span class="text">{{text}}</span>
+    <span class="timestamp">{{timestamp}}</span>
+    <div class="clear"></div>
+  </div> 
+</span>
+</template>

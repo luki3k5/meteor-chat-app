@@ -1,0 +1,71 @@
+.channel .container-fluid {
+  height: 410px;
+  /*border: 1px solid #ABC8E2;*/
+  overflow: scroll;
+  overflow-x: visible;
+}
+
+.message-form{
+  margin-top:20px;
+}
+
+div.login {
+  margin:10px;
+  margin-right:150px;
+  float:right;
+}
+div.channel p{
+  margin: 10px 10px 10px 0;
+  font-size: 18px;
+  font-weight:bold; 
+}
+
+span.username {
+  margin-right:20px;
+  font-weight:bold;
+}
+
+div.messages {
+  /*width: 95%;*/
+  /*margin-left: 10px;*/
+  /*margin-right: 10px;*/
+}
+
+div.message {
+  width:auto;
+  margin:0 auto;
+  padding:5px;
+  border: 1px solid #ABC8E2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.header{
+  width:100%;
+  background-color:#ABC8E2;
+  color:#375D81;
+}
+
+div.clear{ clear:both; }
+
+.channel {
+  /*width:72%;*/
+  /*float:left;*/
+}
+
+.channel form{
+  margin: 10px 10px 10px 0;
+}
+
+.channel form input{
+  width: 100%; 
+  line-height: 12px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.timestamp{
+  float:right;
+}
+
+.tab.active { font-weight:bold; background-color:#ABC8E2;}
