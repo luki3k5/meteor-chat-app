@@ -7,7 +7,7 @@ Meteor.startup(function () {
     ];    
 
     for (var i = 0; i < channels_data.length; i++) {
-      var channel_id = Channels.insert({name: data[i].name});
+      var channel_id = Channels.insert({name: channel_data[i].name});
     }
   }
 });
