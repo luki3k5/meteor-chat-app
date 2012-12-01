@@ -6,7 +6,9 @@ simple chat application built in meteor.js (http://meteor.com)
 - supports channels (public priv)
 - accounts 
 - messages per channel
+- support for Gravatar
 
+example is runnin at: http://chatty-app.herokuapp.com/
 
 ###TODO 
 
