@@ -65,7 +65,7 @@ Template.chatty.events({
 
     Messages.insert({
       text: $('#new_message_text').val(), 
-      timestamp: (new Date()).toTimeString(),
+      timestamp: (new Date()).getTime(),
       username: username,
       gravatar: "http://www.gravatar.com/avatar/" + calcMD5(username) + "?s=64",
       channel_id: Session.get("channel_id")
